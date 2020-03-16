@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowTea</class>
+ <widget class="QMainWindow" name="MainWindowTea">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>教师端</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(231, 240, 233);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1250</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;等线&quot;;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>查询成绩</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_gq">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>631</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 11pt &quot;楷体&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>学号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>姓名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>班级</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>成绩</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>班级排名</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QComboBox" name="gqBox">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>60</y>
+        <width>111</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>按学号</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>按姓名</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="gqEdit">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>140</y>
+        <width>271</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="gqBtn">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>220</y>
+        <width>93</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>查询</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>390</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>按班级</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Box_class_2">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>380</y>
+        <width>281</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="qBtn_class">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>500</y>
+        <width>93</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>查询</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>310</y>
+        <width>601</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>成绩管理</string>
+     </attribute>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>190</y>
+        <width>72</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>学号</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>290</y>
+        <width>72</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>成绩</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="gEdit_id">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>190</y>
+        <width>291</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="gEdit_score">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>290</y>
+        <width>291</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dgBtn">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>430</y>
+        <width>93</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="agBtn">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>430</y>
+        <width>131</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>添加/修改</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget">
+     <attribute name="title">
+      <string>成绩分析</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_sort">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>631</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 11pt &quot;楷体&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="anBtn">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>200</y>
+        <width>160</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>综合分析</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>330</y>
+        <width>72</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分数段</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>380</y>
+        <width>72</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>最低分</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>380</y>
+        <width>72</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>最高分</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_low">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>440</y>
+        <width>113</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;等线&quot;;
+border:1px groove gray;border-radius:10px;padding:2px 4px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_high">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>440</y>
+        <width>113</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;等线&quot;;
+border:1px groove gray;border-radius:10px;padding:2px 4px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>450</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>——</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hlBtn">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>560</y>
+        <width>93</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>查询</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="outgradeBtn">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>270</y>
+        <width>211</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>导出全部学生成绩</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sortBtn">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>130</y>
+        <width>160</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>排名情况</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>60</y>
+        <width>72</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>班级</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Box_class">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>60</y>
+        <width>160</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>基本信息</string>
+     </attribute>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>140</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>姓名</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_tname">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>140</y>
+        <width>250</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>——</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>250</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>账号</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_tid">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>250</y>
+        <width>250</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>——</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="trBtn">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>390</y>
+        <width>121</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string>修改密码</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>100</y>
+        <width>111</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>任教课程</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_subname">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>100</y>
+        <width>250</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>——</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>190</y>
+        <width>72</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>学分</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_subcredit">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>190</y>
+        <width>250</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>——</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>270</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>任教班级</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>-40</y>
+        <width>20</width>
+        <height>731</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 240, 233);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_class">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>290</y>
+        <width>121</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1250</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
