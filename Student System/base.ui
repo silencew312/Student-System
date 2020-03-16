@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Base</class>
+ <widget class="QDialog" name="Base">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>学生管理系统</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(231, 240, 233);</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1250</width>
+     <height>750</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;等线&quot;;</string>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>查询信息</string>
+    </attribute>
+    <widget class="QComboBox" name="qBox">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>70</y>
+       <width>131</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>231</red>
+           <green>240</green>
+           <blue>233</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>按学号</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>按姓名</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="qEdit">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>160</y>
+       <width>321</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;等线&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="qBtn">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>220</y>
+       <width>81</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>631</width>
+       <height>681</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 11pt &quot;楷体&quot;;</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>     学号     </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>     姓名     </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>     性别     </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>     班级     </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>     手机     </string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>320</y>
+       <width>611</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(231, 240, 233);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>430</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>按班级</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Box_class_3">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>430</y>
+       <width>251</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="qBtn_class">
+     <property name="geometry">
+      <rect>
+       <x>870</x>
+       <y>520</y>
+       <width>93</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>信息管理</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>200</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>姓名</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>120</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>新学号</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>280</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>性别</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>440</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>手机</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="name">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>200</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="id">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>120</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="boy">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>280</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>男</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="girl">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>280</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>女</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="phone">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>440</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>请输入学号</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="rEdit">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>40</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Box_class">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>360</y>
+       <width>251</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>请选择班级</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>360</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>班级</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>510</y>
+       <width>461</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="addBtn">
+        <property name="font">
+         <font>
+          <family>等线</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+        </property>
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="rBtn">
+        <property name="styleSheet">
+         <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+        </property>
+        <property name="text">
+         <string>修改</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="dBtn">
+        <property name="styleSheet">
+         <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>密码管理</string>
+    </attribute>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>130</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>请输入账号</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Edit_account">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>130</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="qpasswordBtn">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>130</y>
+       <width>91</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>420</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>新密码</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Edit_new">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>420</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rpass_ok_btn">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>420</y>
+       <width>111</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+     <property name="text">
+      <string>确认修改</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_stu">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>220</y>
+       <width>115</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>学生</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_tea">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>220</y>
+       <width>115</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>老师</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>310</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>密码</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_old">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>310</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>_____</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_m">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>220</y>
+       <width>115</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>管理员</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>班级管理</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_class">
+     <property name="geometry">
+      <rect>
+       <x>362</x>
+       <y>240</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;等线&quot;;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>230</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>新班级名</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Box_class_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>110</y>
+       <width>241</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>请选择班级</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="phoneBtn">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>110</y>
+       <width>241</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+     </property>
+     <property name="text">
+      <string>导出全班学生通讯录</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>110</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>班级</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>390</y>
+       <width>421</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="add_class_Btn">
+        <property name="styleSheet">
+         <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+        </property>
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="revise_class_Btn">
+        <property name="styleSheet">
+         <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+        </property>
+        <property name="text">
+         <string>修改</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Del_class_Btn">
+        <property name="styleSheet">
+         <string notr="true">border:2px groove gray;border-radius:10px;padding:2px 4px;
+background-color: rgb(231, 240, 233);</string>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
